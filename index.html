@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>I'm Truly Sorry ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+ 
+    <style> 
+ 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+ 
+        html { 
+            scroll-behavior: smooth; 
+        } 
+ 
+        body { 
+            min-height: 100vh; 
+            overflow-x: hidden; 
+ 
+            font-family: "Poppins", sans-serif; 
+ 
+            background: #250015; 
+            color: white; 
+        } 
+ 
+ 
+        /* ===================================== 
+           FULL SCREEN HERO 
+        ===================================== */ 
+ 
+        .hero { 
+            position: relative; 
+ 
+            width: 100%; 
+            min-height: 100vh; 
+ 
+            display: flex; 
+            align-items: center; 
+ 
+            overflow: hidden; 
+ 
+            isolation: isolate; 
+        } 
+ 
+ 
+        /* ===================================== 
+           LADY'S IMAGE 
+        ===================================== */ 
+ 
+        .background-image { 
+    position: fixed; 
+    inset: 0; 
+    width: 100%; 
+    height: 100%; 
+ 
+    z-index: -3; 
+ 
+    background-image: url("picpink.jpg"); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+ 
+    transform: none; 
+    animation: none; 
+ 
+    will-change: auto; 
+} 
+ 
+        
+ 
+        /* ===================================== 
+           ROMANTIC GRADIENT OVER IMAGE 
+        ===================================== */ 
+ 
+        .gradient-overlay { 
+ 
+            position: absolute; 
+ 
+            inset: 0; 
+ 
+            z-index: -2; 
+ 
+            background: 
+ 
+                linear-gradient( 
+                    90deg, 
+                    rgba(30, 0, 20, .95) 0%, 
+                    rgba(55, 0, 30, .82) 30%, 
+                    rgba(207, 42, 124, 0.48) 55%, 
+                    rgba(200, 40, 110, .15) 100% 
+                ), 
+ 
+                linear-gradient( 
+                    0deg, 
+                    rgba(30, 0, 20, .75), 
+                    transparent 55% 
+                ); 
+        } 
+ 
+ 
+        /* ===================================== 
+           COLOR GLOW 
+        ===================================== */ 
+ 
+        .glow { 
+ 
+            position: absolute; 
+ 
+            width: 500px; 
+            height: 500px; 
+ 
+            border-radius: 50%; 
+ 
+            background: 
+                rgba(255, 70, 150, .18); 
+ 
+            filter: blur(100px); 
+ 
+            pointer-events: none; 
+        } 
+ 
+        .glow.one { 
+            top: -150px; 
+            right: -100px; 
+        } 
+ 
+        .glow.two { 
+            bottom: -200px; 
+            left: -150px; 
+        } 
+ 
+ 
+        /* ===================================== 
+           CONTENT 
+        ===================================== */ 
+ 
+        .content { 
+ 
+            width: min(1200px, 100%); 
+ 
+            margin: auto; 
+ 
+            padding: 
+                80px 7%; 
+ 
+            position: relative; 
+ 
+            z-index: 5; 
+        } 
+ 
+ 
+        .content-inner { 
+ 
+            max-width: 620px; 
+ 
+            animation: 
+                contentAppear 1.5s ease; 
+        } 
+ 
+ 
+        @keyframes contentAppear { 
+ 
+            from { 
+ 
+                opacity: 0; 
+ 
+                transform: 
+                    translateY(40px); 
+            } 
+ 
+            to { 
+ 
+                opacity: 1; 
+ 
+                transform: 
+                    translateY(0); 
+            } 
+        } 
+ 
+ 
+        /* ===================================== 
+           SMALL LABEL 
+        ===================================== */ 
+ 
+        .label { 
+ 
+            display: inline-flex; 
+ 
+            align-items: center; 
+ 
+            gap: 10px; 
+ 
+            margin-bottom: 20px; 
+ 
+            padding: 
+                8px 18px; 
+ 
+            border: 
+ 
+                1px solid 
+                rgba(255,255,255,.25); 
+ 
+            border-radius: 50px; 
+ 
+            background: 
+                rgba(255,255,255,.08); 
+ 
+            backdrop-filter: 
+                blur(10px); 
+ 
+            color: #ffd5e6; 
+ 
+            font-size: 11px; 
+ 
+            letter-spacing: 4px; 
+ 
+            text-transform: 
+                uppercase; 
+        } 
+ 
+ 
+        /* ===================================== 
+           MAIN TITLE 
+        ===================================== */ 
+ 
+        h1 { 
+ 
+            font-family: 
+                "Cormorant Garamond", 
+                serif; 
+ 
+            font-size: 
+                clamp(80px, 12vw, 170px); 
+ 
+            line-height: 
+                .72; 
+ 
+            font-weight: 
+                600; 
+ 
+            margin-bottom: 
+                35px; 
+ 
+            background: 
+ 
+                linear-gradient( 
+                    110deg, 
+                    #ffffff, 
+                    #ffd6e7 45%, 
+                    #ff8fbb 75%, 
+                    #ffffff 
+                ); 
+ 
+            -webkit-background-clip: 
+                text; 
+ 
+            -webkit-text-fill-color: 
+                transparent; 
+ 
+            filter: 
+                drop-shadow( 
+                    0 10px 30px 
+                    rgba(0,0,0,.35) 
+                ); 
+        } 
+ 
+ 
+        .heart-title { 
+ 
+            display: inline-block; 
+ 
+            font-size: .4em; 
+ 
+            vertical-align: middle; 
+ 
+            -webkit-text-fill-color: 
+                #ff76ad; 
+ 
+            filter: 
+                drop-shadow( 
+                    0 0 15px 
+                    rgba(255,80,150,.8) 
+                ); 
+ 
+            animation: 
+                heartbeat 1.5s infinite; 
+        } 
+ 
+ 
+        @keyframes heartbeat { 
+ 
+            0%, 100% { 
+                transform: scale(1); 
+            } 
+ 
+            15% { 
+                transform: scale(1.2); 
+            } 
+ 
+            30% { 
+                transform: scale(1); 
+            } 
+ 
+            45% { 
+                transform: scale(1.15); 
+            } 
+        } 
+ 
+ 
+        /* ===================================== 
+           DIVIDER 
+        ===================================== */ 
+ 
+        .divider { 
+ 
+            width: 110px; 
+ 
+            height: 3px; 
+ 
+            margin-bottom: 30px; 
+ 
+            border-radius: 10px; 
+ 
+            background: 
+ 
+                linear-gradient( 
+                    90deg, 
+                    #e90b68, 
+                    #ffd0e1 
+                ); 
+ 
+            box-shadow: 
+                0 0 20px 
+                rgba(255,70,150,.7); 
+        } 
+ 
+ 
+        /* ===================================== 
+           APOLOGY TEXT 
+        ===================================== */ 
+ 
+        .message { 
+ 
+            font-size: 
+                clamp(14px, 1.4vw, 17px); 
+ 
+            line-height: 
+                2; 
+ 
+            font-weight: 
+                300; 
+ 
+            color: 
+                rgba(255,255,255,.92); 
+ 
+            margin-bottom: 
+                22px; 
+ 
+            text-shadow: 
+                0 2px 10px 
+                rgba(0,0,0,.4); 
+        } 
+ 
+ 
+        /* ===================================== 
+           QUOTE 
+        ===================================== */ 
+ 
+        .quote { 
+ 
+            margin: 
+                30px 0; 
+ 
+            padding: 
+                20px 25px; 
+ 
+            border-left: 
+                3px solid #ff80b4; 
+ 
+            background: 
+                linear-gradient( 
+                    90deg, 
+                    rgba(255,70,150,.14), 
+                    rgba(255,255,255,.04) 
+                ); 
+ 
+            backdrop-filter: 
+                blur(8px); 
+ 
+            border-radius: 
+                0 18px 18px 0; 
+ 
+            font-family: 
+                "Cormorant Garamond", 
+                serif; 
+ 
+            font-size: 
+                clamp(20px, 2.2vw, 28px); 
+ 
+            font-style: 
+                italic; 
+ 
+            line-height: 
+                1.4; 
+ 
+            color: 
+                #ffe5ef; 
+        } 
+ 
+ 
+        /* ===================================== 
+           BUTTONS 
+        ===================================== */ 
+ 
+        .buttons { 
+ 
+            display: flex; 
+ 
+            gap: 15px; 
+ 
+            flex-wrap: wrap; 
+ 
+            margin-top: 30px; 
+        } 
+ 
+ 
+        .btn { 
+ 
+            border: none; 
+ 
+            padding: 
+                15px 30px; 
+ 
+            border-radius: 
+                50px; 
+ 
+            cursor: pointer; 
+ 
+            font-family: 
+                "Poppins", 
+                sans-serif; 
+ 
+            font-weight: 
+                600; 
+ 
+            transition: 
+                .3s ease; 
+        } 
+ 
+ 
+        .primary { 
+ 
+            color: white; 
+ 
+            background: 
+ 
+                linear-gradient( 
+                    135deg, 
+                    #ff3d8d, 
+                    #bd155f 
+                ); 
+ 
+            box-shadow: 
+ 
+                0 12px 30px 
+                rgba(190,20,95,.45), 
+ 
+                0 0 25px 
+                rgba(255,60,140,.25); 
+        } 
+ 
+ 
+        .primary:hover { 
+ 
+            transform: 
+                translateY(-5px) 
+                scale(1.03); 
+ 
+            box-shadow: 
+ 
+                0 18px 40px 
+                rgba(190,20,95,.6), 
+ 
+                0 0 40px 
+                rgba(255,60,140,.4); 
+        } 
+ 
+ 
+        .secondary { 
+ 
+            color: white; 
+ 
+            background: 
+                rgba(255,255,255,.08); 
+ 
+            border: 
+                1px solid 
+                rgba(255,255,255,.3); 
+ 
+            backdrop-filter: 
+                blur(10px); 
+        } 
+ 
+ 
+        .secondary:hover { 
+ 
+            background: 
+                rgba(255,255,255,.16); 
+ 
+            transform: 
+                translateY(-3px); 
+        } 
+ 
+ 
+        /* ===================================== 
+           FORGIVENESS MESSAGE 
+        ===================================== */ 
+ 
+        .forgiveness { 
+ 
+            max-height: 0; 
+ 
+            overflow: hidden; 
+ 
+            opacity: 0; 
+ 
+            transition: 
+                max-height 1s ease, 
+                opacity 1s ease, 
+                margin 1s ease; 
+        } 
+ 
+ 
+        .forgiveness { 
+    max-height: 0; 
+    overflow: hidden; 
+    opacity: 0; 
+    margin-top: 0; 
+ 
+    transition: 
+        max-height 0.7s ease, 
+        opacity 0.5s ease, 
+        margin-top 0.7s ease; 
+} 
+ 
+.forgiveness.show { 
+    max-height: 350px; 
+    opacity: 1; 
+    margin-top: 30px; 
+} 
+ 
+        .forgiveness-box { 
+ 
+            padding: 
+                25px; 
+ 
+            border-radius: 
+                20px; 
+ 
+            background: 
+                rgba(255,255,255,.10); 
+ 
+            border: 
+                1px solid 
+                rgba(255,255,255,.25); 
+ 
+            backdrop-filter: 
+                blur(15px); 
+ 
+            box-shadow: 
+                0 20px 50px 
+                rgba(0,0,0,.2); 
+        } 
+ 
+ 
+        .forgiveness-box h2 { 
+ 
+            font-family: 
+                "Cormorant Garamond", 
+                serif; 
+ 
+            font-size: 
+                35px; 
+ 
+            color: 
+                #ffd8e7; 
+ 
+            margin-bottom: 
+                8px; 
+        } 
+ 
+ 
+        .forgiveness-box p { 
+ 
+            font-size: 
+                13px; 
+ 
+            line-height: 
+                1.8; 
+ 
+            color: 
+                rgba(255,255,255,.85); 
+        } 
+ 
+ 
+        /* ===================================== 
+           SIGNATURE 
+        ===================================== */ 
+ 
+        .signature { 
+ 
+            margin-top: 
+                30px; 
+ 
+            font-family: 
+                "Cormorant Garamond", 
+                serif; 
+ 
+            font-size: 
+                27px; 
+ 
+            font-style: 
+                italic; 
+ 
+            color: 
+                #ffc5db; 
+        } 
+ 
+ 
+        /* ===================================== 
+           FLOATING HEARTS 
+        ===================================== */ 
+ 
+        .floating-hearts { 
+ 
+            position: 
+                fixed; 
+ 
+            inset: 
+                0; 
+ 
+            pointer-events: 
+                none; 
+ 
+            overflow: 
+                hidden; 
+ 
+            z-index: 
+                10; 
+        } 
+ 
+ 
+        .floating-heart { 
+ 
+            position: 
+                absolute; 
+ 
+            bottom: 
+                -40px; 
+ 
+            color: 
+                rgba(255,170,205,.75); 
+ 
+            text-shadow: 
+                0 0 15px 
+                rgba(255,80,150,.8); 
+ 
+            animation: 
+                rise linear infinite; 
+        } 
+ 
+ 
+        .floating-heart:nth-child(1) { 
+            left: 10%; 
+            animation-duration: 10s; 
+            animation-delay: 1s; 
+        } 
+ 
+        .floating-heart:nth-child(2) { 
+            left: 25%; 
+            animation-duration: 13s; 
+            animation-delay: 4s; 
+        } 
+ 
+        .floating-heart:nth-child(3) { 
+            left: 42%; 
+            animation-duration: 9s; 
+            animation-delay: 2s; 
+        } 
+ 
+        .floating-heart:nth-child(4) { 
+            left: 62%; 
+            animation-duration: 12s; 
+            animation-delay: 6s; 
+        } 
+ 
+        .floating-heart:nth-child(5) { 
+            left: 78%; 
+            animation-duration: 10s; 
+            animation-delay: 3s; 
+        } 
+ 
+        .floating-heart:nth-child(6) { 
+            left: 90%; 
+            animation-duration: 14s; 
+            animation-delay: 7s; 
+        } 
+ 
+ 
+        @keyframes rise { 
+ 
+            0% { 
+ 
+                transform: 
+                    translateY(0) 
+                    rotate(0deg); 
+ 
+                opacity: 
+                    0; 
+            } 
+ 
+            15% { 
+                opacity: 
+                    .8; 
+            } 
+ 
+            50% { 
+ 
+                transform: 
+                    translateY(-50vh) 
+                    rotate(180deg); 
+ 
+                opacity: 
+                    .9; 
+            } 
+ 
+            100% { 
+ 
+                transform: 
+                    translateY(-110vh) 
+                    rotate(360deg); 
+ 
+                opacity: 
+                    0; 
+            } 
+        } 
+ 
+ 
+        /* ===================================== 
+           MOBILE 
+        ===================================== */ 
+ 
+        @media(max-width: 768px) { 
+ 
+    .hero { 
+        min-height: 100vh; 
+        min-height: 100svh; 
+        align-items: flex-end; 
+        position: relative; 
+    } 
+ 
+    .background-image { 
+        position: fixed; 
+        inset: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-position: 58% center; 
+        background-size: cover; 
+        transform: none; 
+        animation: none; 
+    } 
+ 
+ 
+            .background-image { 
+ 
+                background-position: 
+                    58% center; 
+            } 
+ 
+ 
+            .gradient-overlay { 
+ 
+                background: 
+ 
+                    linear-gradient( 
+                        180deg, 
+                        rgba(30,0,20,.05) 0%, 
+                        rgba(35,0,20,.25) 30%, 
+                        rgba(45,0,25,.9) 75%, 
+                        rgba(30,0,20,.98) 100% 
+                    ); 
+            } 
+ 
+ 
+            .content { 
+ 
+                padding: 
+                    100px 25px 45px; 
+            } 
+ 
+ 
+            .content-inner { 
+ 
+                max-width: 
+                    100%; 
+            } 
+ 
+ 
+            h1 { 
+ 
+                font-size: 
+                    clamp(70px, 20vw, 110px); 
+ 
+                margin-bottom: 
+                    25px; 
+            } 
+ 
+ 
+            .message { 
+ 
+                line-height: 
+                    1.8; 
+            } 
+ 
+ 
+            .quote { 
+ 
+                font-size: 
+                    22px; 
+ 
+                margin: 
+                    20px 0; 
+            } 
+ 
+ 
+            .buttons { 
+ 
+                flex-direction: 
+                    column; 
+            } 
+ 
+ 
+            .btn { 
+ 
+                width: 
+                    100%; 
+            } 
+ 
+ 
+            .signature { 
+ 
+                font-size: 
+                    24px; 
+            } 
+        } 
+ 
+ 
+        /* ===================================== 
+           SMALL PHONES 
+        ===================================== */ 
+ 
+        @media(max-width: 400px) { 
+ 
+            .content { 
+ 
+                padding: 
+                    90px 20px 35px; 
+            } 
+ 
+ 
+            .label { 
+ 
+                font-size: 
+                    9px; 
+ 
+                letter-spacing: 
+                    3px; 
+            } 
+ 
+ 
+            h1 { 
+ 
+                font-size: 
+                    68px; 
+            } 
+ 
+ 
+            .message { 
+ 
+                font-size: 
+                    13px; 
+            } 
+ 
+ 
+            .quote { 
+ 
+                font-size: 
+                    20px; 
+            } 
+ 
+        } 
+ 
+    </style> 
+</head> 
+ 
+ 
+<body> 
+ 
+ 
+    <main class="hero"> 
+ 
+        <!-- Lady's photograph --> 
+        <div class="background-image"></div> 
+ 
+        <!-- Transparent romantic gradient --> 
+        <div class="gradient-overlay"></div> 
+ 
+        <!-- Decorative glow --> 
+        <div class="glow one"></div> 
+        <div class="glow two"></div> 
+ 
+ 
+        <!-- Apology --> 
+        <section class="content"> 
+ 
+            <div class="content-inner"> 
+ 
+                <div class="label"> 
+                    ❤️ From My Heart 
+                </div> 
+ 
+ 
+                <h1> 
+                    I'm Truly<br> 
+                    Sorry 
+                    <span class="heart-title">♥</span> 
+                </h1> 
+ 
+ 
+                <div class="divider"></div> 
+ 
+ 
+                <p class="message"> 
+                    Ruki my dear, kindly spend few seconds of your time for me okay, 
+                    after thoroughly thinking through everything, I just want to apologize 
+                    for basically everything I’ve expressed and said to you out of the love 
+                    I’ve felt for you all these while alright. I’m pretty sure that, to you, 
+                    those words have been mind-bothering and disturbing because, obviously, 
+                    your heart already locked in with another gentleman😊 and that’s exactly 
+                    why I’m apologizing. That’s love you know and to try to come in between 
+                    you and the person your heart yearns for, is very unfair to me okayy😊 
+                    just forgive me biko. I hope he realises how lucky he's been to have you, and he maake sure he treats you well🙏🏻.
+                </p> 
+ 
+ 
+                <p class="message"> 
+                    Honestly, when you can’t explain why the heart chooses someone, that to me, 
+                    is LOVE, and for the months I iterated a whole lot of essays about how I 
+                    feel about you, it was just because I truly can’t explain why I had fallen 
+                    in love with you. And frankly, I believe that’s exactly how you also feel 
+                    about your MR Right I guess, so just forgive me for even making an attempt 
+                    or thinking about disturbing your happiness yeah😊.
+                </p> 
+ 
+ 
+                <div class="quote"> 
+                    “When you can't explain why the heart chooses someone,
+                    that to me, is LOVE.”
+ 
+                    
+ 
+                </div> 
+ 
+ 
+                <p class="message">
+                    From this time as you reading this, I will never disturb your mind with 
+                    my ‘trash’ ever again alright. Your happiness is key and I fully and 100% 
+                    support that my dear. So please don’t worry, henceforth, I will never say anything about that so 
+                    called “love” to you again alright queen😊🙏🏻. From now onwards, I hope 
+                    you don’t get stressed and perhaps “bothered” when you see my text or call 
+                    alright, they will just be normal checkups and other important stuffs yeah😊, 
+                    I’ve backed off okay.           </p>
+ 
+ 
+                <p class="message"> 
+                    Grandma and mom must be very disappointed in me by now, for trying to make 
+                    such a move on my aunty🥺, I’m sure. I just hope you all will understand that 
+                    I couldn’t help it falling in love with you yeah but Alhamdulilah now, I’m able 
+                    to back off now and at the appropriate time I will confess my “sins” and 
+                    apologize sincerely, I hope you plead on my behalf😊.
+                </p>
+ 
+ 
+                <p class="message"> 
+                    Thanks for reading this. ❤️
+                </p>
+ 
+ 
+                <div class="buttons"> 
+ 
+                    <button 
+                        class="btn primary" 
+                        onclick="showForgiveness()"> 
+ 
+                        Please Forgive Me ❤️ 
+ 
+                    </button> 
+ 
+ 
+                    <button 
+                        class="btn secondary" 
+                        onclick="scrollToMessage()"> 
+ 
+                        Read Everything 💌 
+ 
+                    </button> 
+ 
+                </div> 
+ 
+ 
+                <div 
+                    class="forgiveness" 
+                    id="forgiveness"> 
+ 
+                    <div class="forgiveness-box"> 
+ 
+                        <h2> 
+                            Can You Forgive Me  please Lovey? 🥺 
+                        </h2> 
+ 
+                        <p> 
+                            I don't expect one apology to fix everything. 
+                            I only want you to know that I am truly sorry, 
+                            and I hope that someday my actions can show 
+                            you how much I mean these words. 
+                        </p> 
+ 
+                    </div> 
+ 
+                </div> 
+ 
+ 
+                <div class="signature"> 
+                    With all my heart, ❤️ 
+                </div> 
+ 
+            </div> 
+ 
+        </section> 
+ 
+ 
+        <!-- Floating hearts --> 
+ 
+        <div class="floating-hearts"> 
+ 
+            <div class="floating-heart">♥</div> 
+            <div class="floating-heart">♡</div> 
+            <div class="floating-heart">♥</div> 
+            <div class="floating-heart">♡</div> 
+            <div class="floating-heart">♥</div> 
+            <div class="floating-heart">♡</div> 
+ 
+        </div> 
+ 
+    </main> 
+ 
+ 
+    <script> 
+ 
+        function showForgiveness() { 
+ 
+            const box = 
+                document.getElementById("forgiveness"); 
+ 
+            box.classList.toggle("show"); 
+ 
+            if (box.classList.contains("show")) { 
+ 
+                createHeartExplosion(); 
+ 
+            } 
+ 
+        } 
+ 
+ 
+        function scrollToMessage() { 
+ 
+            document 
+                .querySelector(".content") 
+                .scrollIntoView({ 
+                    behavior: "smooth" 
+                }); 
+ 
+        } 
+ 
+ 
+        function createHeartExplosion() { 
+ 
+            for (let i = 0; i < 18; i++) { 
+ 
+                const heart = 
+                    document.createElement("div"); 
+ 
+                heart.innerHTML = 
+                    Math.random() > .5 
+                        ? "♥" 
+                        : "♡"; 
+ 
+                heart.style.position = 
+                    "fixed"; 
+ 
+                heart.style.left = 
+                    "50%"; 
+ 
+                heart.style.top = 
+                    "60%"; 
+ 
+                heart.style.zIndex = 
+                    "100"; 
+ 
+                heart.style.pointerEvents = 
+                    "none"; 
+ 
+                heart.style.fontSize = 
+                    (15 + Math.random() * 25) + "px"; 
+ 
+                heart.style.color = 
+                    "#ff8fbb"; 
+ 
+                heart.style.textShadow = 
+                    "0 0 15px rgba(255,80,150,.9)"; 
+ 
+                document.body.appendChild(heart); 
+ 
+ 
+                const x = 
+                    (Math.random() - .5) * 700; 
+ 
+                const y = 
+                    -(Math.random() * 500 + 200); 
+ 
+ 
+                heart.animate( 
+ 
+                    [ 
+                        { 
+                            transform: 
+                                "translate(-50%, -50%) scale(.5)", 
+ 
+                            opacity: 1 
+                        }, 
+ 
+                        { 
+                            transform: 
+                                `translate(${x}px, ${y}px) rotate(${Math.random() * 500}deg) scale(1.2)`, 
+ 
+                            opacity: 0 
+                        } 
+                    ], 
+ 
+                    { 
+                        duration: 
+                            1800 + Math.random() * 1200, 
+ 
+                        easing: 
+                            "cubic-bezier(.2,.8,.3,1)" 
+                    } 
+ 
+                ); 
+ 
+ 
+                setTimeout(() => { 
+ 
+                    heart.remove(); 
+ 
+                }, 3200); 
+ 
+            } 
+ 
+        } 
+ 
+    </script> 
+ 
+</body> 
+</html>
